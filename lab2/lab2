@@ -1,0 +1,25 @@
+// //Exercise 1:  
+
+const gretter = (myArray, counter) => {
+  const greetText = 'Hello ';
+
+  for (const item of myArray) {
+    console.log(`${greetText}${item}`);
+  }
+};
+
+gretter(['Randy Savage', 'Ric Flair', 'Hulk Hogan'], 3);
+
+
+
+
+//Exercise 2
+const capitalize = (myString) => {
+    const [firstChar, ...rest] = myString;
+    return firstChar.toUpperCase() + rest.join('').toLowerCase();
+}
+
+
+console.log(capitalize('fooBar'));
+console.log(capitalize('nodeJs'));
+
